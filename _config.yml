@@ -6,7 +6,7 @@ title_separator: "|"
 subtitle: "Bryan McNulty's friendly pentesting blog"
 name: "Bryan McNulty"
 description: "A blog focused on pentesting, red-teaming, and general topics of cyber security."
-url: "https://localhost:4000"
+url: "https://bryanmcnulty.github.io"
 
 # Custom
 formspree_id: "mlevzlny"
