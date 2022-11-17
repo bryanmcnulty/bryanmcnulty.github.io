@@ -1,0 +1,9 @@
+main:
+  - title: "Home"
+    url: "/"
+
+posts:
+  - title: "Hack The Box Machines"
+    children:
+      - title: "Shared"
+        url: "/2022/11/12/htb-shared.html"

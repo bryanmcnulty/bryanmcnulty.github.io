@@ -1,0 +1,45 @@
+theme: "minimal-mistakes-jekyll"
+minimal_mistakes_skin: "dark"
+
+title: "Bryan's Blog"
+title_separator: "|"
+subtitle: "Bryan McNulty's friendly pentesting blog"
+name: "Bryan McNulty"
+description: "A blog focused on pentesting, red-teaming, and general topics of cyber security."
+url: "https://localhost:4000"
+
+# Custom
+formspree_id: "mlevzlny"
+google_gtag: "G-1EQNZKMD35"
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      show_date: true
+      read_time: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+      sidebar:
+        nav: "posts"
+
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      classes: "wide"
+      sidebar:
+        nav: "posts"
+
+search: true
+
+plugins: ["jekyll-include-cache"]
+include: ["_pages"]
+
+compress_html:
+  clippings: "all"
