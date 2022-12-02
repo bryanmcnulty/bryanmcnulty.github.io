@@ -1,21 +1,23 @@
 ---
-title: "Hack The Box - Shared"
+title: "HTB - Shared"
 excerpt: "Hack The Box Machines • Linux • Medium"
+layout: "htb_machine"
+htb:
+  machine:
+    name: "Shared"
+    url: "https://app.hackthebox.com/machines/Shared"
+  avatar: "/assets/images/htb-machines/avatars/shared.png"
+  difficulty: "Medium"
+  os: "Linux"
+  author:
+    - name: "Nauten #27582"
+      url: "https://app.hackthebox.com/users/27582"
 ---
 
-
-|:-------------|:---------------|
-| Difficulty   | Medium         |
-| Category     | Linux          |
-| Author       | Nauten #27582  |
-
-* * *
 
 ## Synopsis
 
 Shared is a medium Linux machine provided by Hack The Box that features a website with a virtual hostname that is vulnerable to SQL injection. Successful exploitation of this vulnerability provides us with the password for a user called `james_mason`. With these credentials we are able to login via SSH and elevate privileges to a user called `dan_smith` by exploiting a vulnerable cron job. The user can then reverse-engineer an executable to recover the password for the local Redis service and load a special shared object module using `LOAD MODULE` to execute commands as root.
-
-* * *
 
 
 ## Reconnaissance
@@ -38,7 +40,6 @@ PORT    STATE SERVICE  REASON  VERSION
 80/tcp  open  http     syn-ack nginx 1.18.0
 443/tcp open  ssl/http syn-ack nginx 1.18.0
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-
 ```
 
 The scan reports that the SSH service, HTTP service, and HTTPS service are running on ports `22`, `80`, and `443` respectively.
