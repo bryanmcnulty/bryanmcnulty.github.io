@@ -1,0 +1,40 @@
+---
+layout: single
+---
+
+{% if page.htb %}
+{% assign htb = page.htb %}
+{% assign authors = htb.author %}
+<div id="htb_header">
+<div id="htb_challenge_table" class="align-center">
+<table><tbody>
+	<tr>
+		<td>Platform</td>
+		<td><a href="https://www.hackthebox.com/">Hack The Box</td>
+	</tr><tr>
+		<td>Challenge</td>
+		<td><a href="{{ htb.challenge.url }}">{{ htb.challenge.name }}</a></td>
+	</tr><tr>
+		<td>Difficulty</td>
+		<td><b>{{ htb.difficulty }}</b></td>
+	</tr><tr>
+		<td>Category</td>
+		<td><b>{{ htb.category }}</b></td>
+	</tr><tr>
+		<td>Author{% if authors[1] %}s{% endif %}</td>
+		<td>
+		<a href="{{ authors[0].url }}">{{ authors[0].name }}</a>
+		{% assign authors = authors | slice: 1, 16 %}
+		{% for author in authors %}
+			• <a href="{{ author.url }}">{{ author.name }}</a>
+		{% endfor %}
+		</td>
+	</tr>
+</tbody></table>
+</div>
+</div>
+{% endif %}
+
+<div id="challenge_writeup">
+{{ content }}
+</div>

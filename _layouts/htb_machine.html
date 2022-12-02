@@ -1,0 +1,43 @@
+---
+layout: single
+---
+
+{% if page.htb %}
+{% assign htb = page.htb %}
+{% assign authors = htb.author %}
+<div id="htb_header">
+<div id="htb_machine_avatar" class="align-left">
+	<img src="{{ htb.avatar }}"></img>
+</div>
+<div id="htb_machine_table" class="align-left">
+<table><tbody>
+	<tr>
+		<td>Platform</td>
+		<td><a href="https://www.hackthebox.com/">Hack The Box</td>
+	</tr><tr>
+		<td>Machine</td>
+		<td><a href="{{ htb.machine.url }}">{{ htb.machine.name }}</a></td>
+	</tr><tr>
+		<td>Difficulty</td>
+		<td><b>{{ htb.difficulty }}</b></td>
+	</tr><tr>
+		<td>OS</td>
+		<td><b>{{ htb.os }}</b></td>
+	</tr><tr>
+		<td>Author{% if authors[1] %}s{% endif %}</td>
+		<td>
+		<a href="{{ authors[0].url }}">{{ authors[0].name }}</a>
+		{% assign authors = authors | slice: 1, 16 %}
+		{% for author in authors %}
+			• <a href="{{ author.url }}">{{ author.name }}</a>
+		{% endfor %}
+		</td>
+	</tr>
+</tbody></table>
+</div>
+</div>
+{% endif %}
+
+<div id="machine_writeup" style="padding-top:10em">
+{{ content }}
+</div>
