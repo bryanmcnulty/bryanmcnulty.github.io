@@ -38,6 +38,9 @@ defaults:
 
 search: true
 
+atom_feed:
+  hide: true
+
 plugins: ["jekyll-include-cache"]
 include: ["_pages"]
 
