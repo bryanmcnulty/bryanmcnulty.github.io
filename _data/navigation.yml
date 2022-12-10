@@ -7,6 +7,8 @@ posts:
     children:
       - title: "Shared"
         url: "/2022/11/12/htb-shared.html"
+      - title: "Outdated"
+        url: "/2022/12/10/htb-outdated.html"
   - title: "Hackt The Box Challenges"
     children:
       - title: "Pinned"
