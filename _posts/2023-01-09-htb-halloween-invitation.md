@@ -48,7 +48,7 @@ The code in these files appears to be obfuscated, but we can tell that the code 
 We also notice a bunch of hex strings being concatenated in the code so we decide to do this step ourselves.
 
 ```bash
-cat ./A4.vba |
+$ cat ./A4.vba |
   tail -72 |
   head -55 |
   sed 's/^[^"]*"//;s/"[^"]*$//;s/"[^"]*"//' |
