@@ -9,7 +9,9 @@ posts:
         url: "/2022/11/12/htb-shared.html"
       - title: "Outdated"
         url: "/2022/12/10/htb-outdated.html"
-  - title: "Hackt The Box Challenges"
+  - title: "Hack The Box Challenges"
     children:
       - title: "Pinned"
         url: "/2022/12/02/htb-pinned.html"
+      - title: "Halloween Invitation"
+        url: "/2023/01/09/htb-halloween-invitation.html"
