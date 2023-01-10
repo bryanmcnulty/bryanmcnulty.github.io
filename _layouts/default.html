@@ -48,6 +48,18 @@
       </div>
     {% endif %}
     <link rel="shortcut icon" href="{{ site.baseurl }}/assets/icons/favicon.ico">
+    <style>
+      .masthead__inner-wrap {
+        max-width: initial;
+        padding-left: 8em;
+        padding-right: 8em;
+      }
+      #main {
+        max-width: initial;
+        padding-left: 8em;
+        padding-right: 8em;
+      }
+    </style>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
