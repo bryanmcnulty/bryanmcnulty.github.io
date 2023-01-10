@@ -6,11 +6,12 @@ layout: single
 {% assign htb = page.htb %}
 {% assign authors = htb.author %}
 <div id="htb_header">
-<div id="htb_machine_avatar" class="align-left">
-	<img src="{{ htb.avatar }}"></img>
-</div>
-<div id="htb_machine_table" class="align-left">
-<table><tbody>
+<table>
+	<tr>
+		<th rowspan="6">
+			<img src="{{ htb.avatar }}"></img>
+		</th>
+	</tr>
 	<tr>
 		<td>Platform</td>
 		<td><a href="https://www.hackthebox.com/">Hack The Box</td>
@@ -33,11 +34,10 @@ layout: single
 		{% endfor %}
 		</td>
 	</tr>
-</tbody></table>
-</div>
+</table>
 </div>
 {% endif %}
 
-<div id="machine_writeup" style="padding-top:10em">
+<div id="machine_writeup">
 {{ content }}
 </div>
