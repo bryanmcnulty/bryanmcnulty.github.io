@@ -2,3 +2,4 @@ https://bryanmcnulty.github.io/
 https://bryanmcnulty.github.io/2022/11/12/htb-shared.html
 https://bryanmcnulty.github.io/2022/12/02/htb-pinned.html
 https://bryanmcnulty.github.io/2022/12/10/htb-outdated.html
+https://bryanmcnulty.github.io/2023/01/09/htb-halloween-invitation.html
