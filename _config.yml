@@ -3,54 +3,55 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
+# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
+# and doesn't have a custom domain.
+baseurl: ""
+
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
 lang: en
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
+# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone:
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Bryan's Blog # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: Bryan McNulty's friendly cybersecurity blog # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  A blog focused on penetration testing and cybersecurity
 
-# Fill in the protocol & hostname for your site.
-# e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: https://bryanmcnulty.com
 
 github:
-  username: github_username # change to your github username
+  username: bryanmcnulty # change to your github username
 
 twitter:
-  username: twitter_username # change to your twitter username
+  username: brymcnulty # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Bryan McNulty
+  email: bryanmcnulty@protonmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
+    - https://twitter.com/brymcnulty # change to your twitter homepage
+    - https://github.com/bryanmcnulty # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
-
-google_site_verification: # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: G-1EQNZKMD35
 
 # Prefer color scheme setting.
 #
@@ -63,7 +64,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: # [light|dark]
+theme_mode: "dark"
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
@@ -73,7 +74,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: /assets/img/avatar/avatar.png
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -111,9 +112,6 @@ pwa:
 
 paginate: 10
 
-# The base URL of your site
-baseurl: ""
-
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
@@ -134,6 +132,10 @@ collections:
 
 defaults:
   - scope:
+      path: ""
+    values:
+      sitemap: false
+  - scope:
       path: "" # An empty string here means all files in the project
       type: posts
     values:
@@ -143,6 +145,7 @@ defaults:
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
       permalink: /posts/:title/
+      sitemap: true
   - scope:
       path: _drafts
     values:
@@ -153,6 +156,7 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+      sitemap: true
   - scope:
       path: assets/img/favicons
     values:
@@ -177,11 +181,12 @@ compress_html:
 exclude:
   - "*.gem"
   - "*.gemspec"
-  - docs
   - tools
   - README.md
+  - CHANGELOG.md
   - LICENSE
   - rollup.config.js
+  - node_modules
   - package*.json
 
 jekyll-archives:

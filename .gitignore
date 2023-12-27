@@ -20,3 +20,9 @@ package-lock.json
 
 # Misc
 assets/js/dist
+
+# Custom
+.local
+_drafts
+_tabs/goals.md
+assets/img/post/*_dev
