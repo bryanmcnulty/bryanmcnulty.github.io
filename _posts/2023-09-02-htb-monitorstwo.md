@@ -12,6 +12,7 @@ tags:
   - "Docker"
   - "SUID"
   - "Database"
+  - "SQL"
 excerpt: "MonitorsTwo is an easy Linux machine on Hack the Box that covers topics including Common Vulnerabilities & Exposures (CVEs), Linux privilege escalation, Docker, SQL, and pivoting"
 categories:
   - "Writeups"

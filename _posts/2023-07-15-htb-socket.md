@@ -11,6 +11,7 @@ tags:
   - "Sudo"
   - "Web"
   - "WebSocket"
+  - "Hash Cracking"
 excerpt: "Socket is a medium difficulty Linux machine on Hack the Box that involves reverse engineering, SQL injection, sudo exploitation, and bash scripting"
 categories:
   - "Writeups"

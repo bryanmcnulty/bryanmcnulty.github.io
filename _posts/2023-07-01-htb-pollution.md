@@ -16,6 +16,7 @@ tags:
   - "JavaScript"
   - "CVE"
   - "Prototype Pollution"
+  - "SQL"
 excerpt: "Pollution is a hard linux machine on Hack the Box that involves various forms of web exploitation like XXE and Prototype Pollution, and features Redis, MySQL, NodeJS and FastCGI"
 categories:
   - "Writeups"

