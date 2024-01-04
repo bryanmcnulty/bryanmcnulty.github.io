@@ -768,7 +768,7 @@ sudo /opt/secure_compose.py /tmp/privileged-bypass-OsE7Cu.yml
 ~~~
 {:file="bryan@redteam ➤ ssh ➤ john@cybermonday ➤ bash" .nolineno}
 
-From the reverse shell session, we mounted the host filesystem at `/mnt`{:.filepath} to grant full access to the host filesystem. We used `chroot` to switch to the mounted host filesystem, and finally read the root flag.
+From the reverse shell session, we mounted the host filesystem at `/mnt`{:.filepath} to gain full access. We then used `chroot` to switch to the mounted host filesystem, and finally read the root flag.
 
 ~~~bash
 # Mount the host filesystem
