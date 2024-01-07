@@ -15,12 +15,14 @@ I'm a passionate individual with a natural curiosity for all things cybersecurit
 
 I mostly share posts where I cover how solve cybersecurity challenges, but more importantly, how to better understand a variety of concepts so that one can be successful when presented with future challenges. I try to make my writeups as detailed as possible so that no hacker is left behind. If you are confused by the contents of any post, please do not hesitate to contact me.
 
+
 ## Let's Connect
 
 If you have any questions, ideas, or just want to say hi, I'd love to hear from you! Shoot me an email at [bryanmcnulty@protonmail.com](mailto:bryanmcnulty@protonmail.com) or message me on Discord [@bryanmcnulty](https://discord.com/users/844241499859451924).
 
-### CTF Profiles
 
-[![HTB Profile](https://www.hackthebox.eu/badge/image/905477)](https://app.hackthebox.com/profile/905477)
+* * *
+
+<script src="https://www.hackthebox.com/badge/905477"></script>
 
 <script src="https://tryhackme.com/badge/940578"></script>

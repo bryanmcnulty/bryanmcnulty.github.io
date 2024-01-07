@@ -10,8 +10,7 @@ tags:
   - "LDAP"
   - "Reversing"
   - "Static Analysis"
-  - "BloodHound"
-  - "C#"
+  - "C Sharp"
 excerpt: "Support is an easy-difficulty Windows machine on Hack the Box that involves hard-coded credentials, reversing, SMB, LDAP, and common pitfalls in Active Directory including sensitive information in accessible attributes and dangerous access control entries. Some of the tools we use include ILSpy, BloodHound, and Impacket"
 categories:
   - "Writeups"

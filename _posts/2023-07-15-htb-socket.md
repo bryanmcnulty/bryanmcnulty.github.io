@@ -12,6 +12,7 @@ tags:
   - "Web"
   - "WebSocket"
   - "Hash Cracking"
+  - "Code Review"
 excerpt: "Socket is a medium difficulty Linux machine on Hack the Box that involves reverse engineering, SQL injection, sudo exploitation, and bash scripting"
 categories:
   - "Writeups"
