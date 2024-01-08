@@ -71,3 +71,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
+      - name: Check site
+        run: sleep 5; [ 200 -eq $(curl "$CHECK_URL" -sw '%{http_code}' -o /dev/null) ]
+        env:
+          CHECK_URL: ${{ steps.deployment.outputs.page_url }}/about/
