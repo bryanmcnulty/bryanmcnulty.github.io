@@ -8,6 +8,14 @@ order: 4
 On this page you'll find some of the in-progress or completed certificate programs I've participated in. I'm always looking for new opportunities to learn and demonstrate my knowledge.
 
 
+## **Zero Point Security**
+
+### Certified Red Team Operator (CRTO)
+**_In Progress_**
+
+> This course aims to teach the fundamental concepts and skillsets required to get started in the field of red teaming.  We'll begin with some theory about how to plan and approach an engagement, and how each stage of the attack lifecycle can be tackled (from initial compromise to domain takeover).  Along the way, we'll highlight some tactics to avoid (and why) and suggest suitable alternatives. [Learn more](https://training.zeropointsecurity.co.uk/courses/red-team-ops)
+
+
 ## **Hack The Box**
 
 ### Certified Penetration Testing Specialist (CPTS)
