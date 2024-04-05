@@ -7,6 +7,7 @@ tags:
   - "Intermediate"
   - "CVE"
   - "Ruby"
+  - "YAML"
   - "Sudo"
 excerpt: "Precious is an easy linux machine on Hack the Box that involves web exploitation, CVEs, Ruby programs, and sudo exploitation. Some vulnerable or misconfigured products featured on this machine include Ruby Programming Language and PDFKit"
 categories:
