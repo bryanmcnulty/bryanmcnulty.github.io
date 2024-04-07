@@ -11,9 +11,16 @@ On this page you'll find some of the in-progress or completed certificate progra
 ## **Zero Point Security**
 
 ### Certified Red Team Operator (CRTO)
-**_In Progress_**
+
+> Holders of the Red Team Operator badge have demonstrated their knowledge of adversary simulation, command & control, engagement planning and time management. They can perform each stage of an attack lifecycle from initial compromise, to full domain takeover, data hunting, and exfiltration; whilst being aware of OPSEC concerns and bypassing defences.
+
+[View Certificate](https://eu.badgr.com/public/assertions/Z7CexM7ZQDifhbh94wl78g?identity__email=bryanmcnulty@protonmail.com)
+
+### Red Team Ops
 
 > This course aims to teach the fundamental concepts and skillsets required to get started in the field of red teaming.  We'll begin with some theory about how to plan and approach an engagement, and how each stage of the attack lifecycle can be tackled (from initial compromise to domain takeover).  Along the way, we'll highlight some tactics to avoid (and why) and suggest suitable alternatives. [Learn more](https://training.zeropointsecurity.co.uk/courses/red-team-ops)
+
+[View Certificate](/assets/certs/ZPS-vj87bnltfu.pdf)
 
 
 ## **Hack The Box**
