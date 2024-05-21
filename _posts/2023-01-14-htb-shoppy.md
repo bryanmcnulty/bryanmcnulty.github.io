@@ -7,7 +7,6 @@ tags:
   - "Docker"
   - "Reversing"
   - "Web"
-  - "Hash Cracking"
   - "Linux"
   - "Easy Difficulty"
 excerpt: "Shoppy is an easy-difficulty Linux machine on Hack the Box that involves subdomain enumeration, NoSQL injection, and reversing. Some tools we use to solve this machine are Radare2, Dirsearch, and FFUF"

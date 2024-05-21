@@ -6,8 +6,8 @@ tags:
   - "Forensics"
   - "Blue Team"
   - "Medium Difficulty"
-  - "Hash Cracking"
   - "Intermediate"
+  - "Cryptography"
 excerpt: "Seized is a medium-difficulty forensics challenge on Hack the Box that involves recovering credentials from a Windows AppData folder which are protected via DPAPI and stored by Google Chrome"
 categories:
   - "Writeups"

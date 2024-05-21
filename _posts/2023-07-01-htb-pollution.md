@@ -9,7 +9,6 @@ tags:
   - "PHP"
   - "XXE"
   - "Code Review"
-  - "Hash Cracking"
   - "LFI"
   - "MySQL"
   - "FastCGI"
@@ -17,6 +16,7 @@ tags:
   - "CVE"
   - "Prototype Pollution"
   - "SQL"
+  - "API"
 excerpt: "Pollution is a hard linux machine on Hack the Box that involves various forms of web exploitation like XXE and Prototype Pollution, and features Redis, MySQL, NodeJS and FastCGI"
 categories:
   - "Writeups"

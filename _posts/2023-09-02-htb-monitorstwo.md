@@ -5,7 +5,6 @@ tags:
   - "Linux"
   - "Easy Difficulty"
   - "Web"
-  - "Hash Cracking"
   - "MySQL"
   - "Pivoting"
   - "CVE"

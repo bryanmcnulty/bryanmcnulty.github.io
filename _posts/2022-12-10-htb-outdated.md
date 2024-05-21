@@ -7,7 +7,6 @@ tags:
   - "Active Directory"
   - "SMB"
   - "Malicious Document"
-  - "BloodHound"
   - "Shadow Credentials"
   - "WSUS"
   - "WinRM"

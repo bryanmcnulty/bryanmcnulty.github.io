@@ -10,7 +10,7 @@ tags:
   - "WordPress"
   - "SQL Injection"
   - "XXE"
-  - "Hash Cracking"
+  - "SQL"
 excerpt: "MetaTwo is an easy Linux machine on Hack the Box that involves SQL injection, XXE, hash cracking, and Common Vulnerabilities and Exposures (CVE). Some vulnerable or misconfigured products featured in this machine include Wordpress and Wordpress plugins."
 categories:
   - "Writeups"

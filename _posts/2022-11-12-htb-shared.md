@@ -12,7 +12,6 @@ tags:
   - "Reversing"
   - "Static Analysis"
   - "Redis"
-  - "Hash Cracking"
 excerpt: "Shared is a medium-difficulty Linux machine on Hack the Box that involves SQL injection, reversing, static analysis, and password cracking. The technologies featured in this machine include data storage solutions such as MySQL and Redis."
 categories:
   - "Writeups"

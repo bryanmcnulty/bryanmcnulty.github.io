@@ -13,7 +13,6 @@ tags:
   - "PostgreSQL"
   - "Database"
   - "Cryptography"
-  - "Hash Cracking"
 excerpt: "Download is a hard Linux machine on Hack the Box that involves web path traversal vulnerabilities, CRON jobs, PostgreSQL, and utilizing a TTY pushback for privilege escalation"
 categories:
   - "Writeups"

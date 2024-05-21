@@ -7,6 +7,7 @@ tags:
   - "Type Juggling"
   - "Code Review"
   - "Very Easy Difficulty"
+  - "API"
 excerpt: "Juggling Facts is a web challenge released on Hack the Box that is marked as very easy and involves finding and exploiting a PHP type juggling vulnerability in a web application"
 categories:
   - "Writeups"

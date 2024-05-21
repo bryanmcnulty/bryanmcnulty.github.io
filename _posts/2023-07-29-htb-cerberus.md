@@ -10,7 +10,6 @@ tags:
   - "Pivoting"
   - "WinRM"
   - "Active Directory"
-  - "Hash Cracking"
   - "CVE"
   - "Command & Control"
 excerpt: "Cerberus is a hard Windows machine on Hack the Box that involves CVEs, pivoting, hash cracking, and command & control"

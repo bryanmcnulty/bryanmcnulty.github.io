@@ -5,7 +5,6 @@ tags:
   - "Linux"
   - "Medium Difficulty"
   - "Web"
-  - "Hash Cracking"
   - "Neo4j"
   - "Pivoting"
   - "Cypher Injection"
