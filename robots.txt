@@ -1,0 +1,8 @@
+User-agent: *
+
+Disallow: /norobots/
+Disallow: /tags/
+Disallow: /categories/
+Disallow: /assets/
+
+Sitemap: https://bryanmcnulty.com/sitemap.xml
