@@ -10,13 +10,13 @@ tags:
   - "APK"
   - "Java"
   - "Cryptography"
-excerpt: "APKrypt is an easy mobile challenge on Hack the Box that involves reverse-engineering via static analysis, android APK apps, and Cryptography."
+excerpt: "APKrypt is an easy mobile challenge on Hack the Box that involves reverse-engineering via static analysis, android APK apps, and Cryptography"
 categories:
   - "Writeups"
   - "Hack the Box Challenges"
 ---
 
-APKrypt is an easy mobile created by [**bertolis**](https://app.hackthebox.com/users/27897) on [**Hack The Box**](https://app.hackthebox.com/challenges/APKrypt) that involves reverse-engineering an android app to find a key along with an encrypted string which we use to recover the flag.
+APKrypt is an easy mobile challenge created by [**bertolis**](https://app.hackthebox.com/users/27897) on [**Hack The Box**](https://app.hackthebox.com/challenges/APKrypt) that involves reverse-engineering an android app to find a key along with an encrypted string which we use to recover the flag.
 
 > Can you get the ticket without the VIP code?
 
@@ -29,7 +29,7 @@ For this challenge, we'll perform some static analysis on `APKrypt.apk`{:.filepa
 We decompress and decode the APK file with the following command:
 
 ```bash
-apktool decode "APKrypt.apk"{:.filepath}
+apktool decode "APKrypt.apk"
 ```
 {:.nolineno}
 
@@ -38,7 +38,7 @@ apktool decode "APKrypt.apk"{:.filepath}
 We'll use the `d2j-smali` utility from [dex2jar](https://github.com/pxb1988/dex2jar) to compile each _SMALI_ into a single _DEX_ file.
 
 ```bash
-cd "./APKrypt/smali/com/example/apkrypt"
+cd ./APKrypt/smali/com/example/apkrypt
 d2j-smali *
 ```
 {:.nolineno}

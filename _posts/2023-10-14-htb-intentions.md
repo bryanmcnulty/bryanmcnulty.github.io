@@ -10,7 +10,6 @@ tags:
   - "File Upload"
   - "SQL Injection"
   - "Python"
-  - "CVE"
   - "Cryptography"
 excerpt: "Intentions is a hard Linux machine on Hack the Box that involves web exploitation, API testing, SQL injection, Git, and cryptography"
 categories:

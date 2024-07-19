@@ -81,7 +81,7 @@ We can now access the extracted secrets in `./secrets/`{:.filepath} if we need t
 
 ## WinRM
 
-Back at the packet capture, we filter out the traffic sent before the exfiltration over port 8080 using the filter `frame.number > 21346`. This will allow us to better see what actions the adversary took after stealing the NTDS secrets.
+Back at the packet capture, we filter out the traffic sent after the exfiltration over port 8080 using the filter `frame.number > 21346`. This will allow us to better see what actions the adversary took after stealing the NTDS secrets.
 
 ![Traffic after exfiltration](post-exfil.png)
 _Looking for actions taken by the adversary after reading the NTDS secrets_
