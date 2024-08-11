@@ -51,6 +51,17 @@ _May 2023_
 [View Certificate](/assets/certs/HTBCERT-AC4D4BCFBF.pdf)
 
 
+## **CyberWarFare Labs**
+
+### Multi-Cloud Red Team Analyst (MCRTA)
+_August 2024_
+
+> The MCRTA Certification provides a deeply engaging learning experience, offering a hands-on approach across multiple cloud platforms including Amazon AWS, Microsoft Azure, and Google GCP. Through a meticulously crafted multi-cloud lab environment, participants are immersed in simulated real-world scenarios, spanning from initial external reconnaissance to navigating and accessing sensitive information within cloud infrastructures. [Learn more](https://hamdisevben.medium.com/multi-cloud-red-team-analyst-mcrta-dff807d3f3a3)
+>
+> \- [Hamdi Sevben](https://hamdisevben.medium.com/)
+
+[View Certificate](/assets/certs/CWL-MCRTA-66b6f6b15579bdc57c6a451a.pdf)
+
 ## **Google**
 
 ### Cybersecurity Professional Certificate
