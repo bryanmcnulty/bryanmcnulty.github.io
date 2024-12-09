@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-Welcome to my my blog! I'm Bryan, and I'm thrilled to have you here at my personal blog dedicated to ethical hacking, penetration testing, and Capture The Flag (CTF) challenges.
+Welcome to my blog! I'm Bryan, and I'm thrilled to have you here at my personal blog dedicated to ethical hacking, penetration testing, and Capture The Flag (CTF) challenges.
 
 ## Who Am I?
 
