@@ -5,7 +5,7 @@ order: 4
 ---
 
 
-On this page you'll find some of the in-progress or completed certificate programs I've participated in. I'm always looking for new opportunities to learn and demonstrate my knowledge.
+On this page you'll find some of the in-progress or completed certificate programs I've participated in. I'm always looking for new opportunities to learn and apply knowledge.
 
 
 ## **Zero Point Security**
@@ -23,6 +23,15 @@ _April 2024_
 > This course aims to teach the fundamental concepts and skillsets required to get started in the field of red teaming.  We'll begin with some theory about how to plan and approach an engagement, and how each stage of the attack lifecycle can be tackled (from initial compromise to domain takeover).  Along the way, we'll highlight some tactics to avoid (and why) and suggest suitable alternatives. [Learn more](https://training.zeropointsecurity.co.uk/courses/red-team-ops)
 
 [View Certificate](/assets/certs/ZPS-vj87bnltfu.pdf)
+
+## **VulnLab**
+
+### Wutai Master
+_November 2024_
+
+> Wutai is an intermediate level multi-domain red team lab simulating an internal penetration test. This lab enables students to practice in-demand skills including reverse engineering, Active Directory attacks, antivirus & EDR evasion, and many more.
+
+[View Certificate](https://eu.badgr.com/public/assertions/aUiUFesgTWCVdvcJlsFKZw?identity__email=bryanmcnulty@protonmail.com)
 
 
 ## **Hack The Box**
