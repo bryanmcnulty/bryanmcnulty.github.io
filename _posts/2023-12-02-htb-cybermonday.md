@@ -802,4 +802,4 @@ sudo /opt/secure_compose.py ./volumes-bypass.yml
 ~~~
 {:file="bryan@redteam ➤ ssh ➤ john@cybermonday ➤ bash" .nolineno}
 
-After catching the reverse shell, the root flag was once again read from `/mnt/root/root.txt`{:.filepath}.
+The root flag was once again read from `/mnt/root/root.txt`{:.filepath}.
