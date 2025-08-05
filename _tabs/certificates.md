@@ -5,7 +5,7 @@ order: 4
 ---
 
 
-On this page you'll find some of the in-progress or completed certificate programs I've participated in. I'm always looking for new opportunities to learn and apply knowledge.
+On this page you'll find some of the completed certificate programs I've participated in. I'm always looking for new opportunities to learn and apply knowledge.
 
 
 ## **Zero Point Security**
@@ -36,10 +36,20 @@ _November 2024_
 
 ## **Hack The Box**
 
+<!--
 ### Certified Penetration Testing Specialist (CPTS)
 **_In Progress_**
 
 > HTB Certified Penetration Testing Specialist (HTB CPTS) is a highly hands-on certification that assesses the candidates' penetration testing skills. HTB Certified Penetration Testing Specialist certification holders will possess technical competency in the ethical hacking and penetration testing domains at an intermediate level. They will be able to spot security issues and identify avenues of exploitation that may not be immediately apparent from searching for CVEs or known exploit PoCs. They can also think outside the box, chain multiple vulnerabilities to showcase maximum impact, and actionably help organizations remediate vulnerabilities through commercial-grade pentesting reports. [Learn more](https://academy.hackthebox.com/preview/certifications/htb-certified-penetration-testing-specialist/)
+-->
+
+### Alchemy Pro Lab
+_August 2025_
+
+> Alchemy offers a meticulously simulated IT and OT environment, specifically crafted for offensive training to sharpen your engagement tactics and enhance your ICS cybersecurity skills in enumeration and exploitation. This immersive lab experience invites you to develop or test your abilities in a realistic setting, preparing you for real-world challenges in OT cybersecurity. Within Alchemy's scenario, you will encounter INFNTY, a fabricated PLC vendor whose products are integral to the brewery environment, adding layers of complexity and realism to the training experience.
+[Learn more](https://app.hackthebox.com/prolabs/overview/alchemy)
+
+[View Certificate](/assets/certs/HTBCERT-6150F8BEAE.pdf)
 
 
 ### Zephyr Pro Lab
